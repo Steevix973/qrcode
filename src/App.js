@@ -22,13 +22,12 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <><div class="background-image"></div><div className="App">
       <h1>Générateur de code QR
       </h1>
       <div className="input-box">
         <div className="gen">
-          <input type="text" onChange={
-            (e) => { setTemp(e.target.value) }}
+          <input type="text" onChange={(e) => { setTemp(e.target.value); } }
             placeholder="Saisir le texte à encoder" />
           <button className="button"
             onClick={handleClick}>
@@ -37,10 +36,10 @@ function App() {
         </div>
         <div className="extra">
           <h5>Couleur arrière plan:</h5>
-          <input type="color" onChange={(e) => { setBgColor(e.target.value.substring(1)) }} />
+          <input type="color" onChange={(e) => { setBgColor(e.target.value.substring(1)); } } />
           <h5>Dimension:</h5>
           <input type="range" min="200" max="600"
-            value={size} onChange={(e) => { setSize(e.target.value) }} />
+            value={size} onChange={(e) => { setSize(e.target.value); } } />
         </div>
       </div>
       <div className="output-box">
@@ -49,7 +48,7 @@ function App() {
           <button type="button">Télécharger</button>
         </a>
       </div>
-    </div>
+    </div></>
   );
 }
 

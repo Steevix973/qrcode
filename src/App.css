@@ -44,9 +44,16 @@ button:active{
   align-items: center;
   gap: 40px;
 }
-body  {
+.background-image{
   background-image: url("https://www.rsmaguyane.fr/images/silde_1/Sans_titre17.jpg");
-  background-size:contain;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+ }
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ body{
+  background: linear-gradient(#EEFF99,#596643);
 }
-
